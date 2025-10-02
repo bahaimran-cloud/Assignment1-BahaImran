@@ -7,20 +7,31 @@
 }
 
 nav li {
-  display: inline-block;
-  margin: 5px 0;
+  display: block;
+  margin: 10px 0;
 }
 
 nav {
-  background-color: #9FC131;
+  background-color: #D6D58E;
+}
+
+nav a {
+  background-color: #D6D58E;
+  color: #046380;
+  margin: auto;
+  display: block;
+  width: 60%;
+  font-weight: bold;
 }
 body {
-  color: black;
+  color: #046380;
+  font-weight: bold;
   background: linear-gradient(135deg, #9FC131, white);
 }
 
 header, footer {
   background: #9FC131;
+  color: #005C53;
 }
 
 .project-box {
@@ -33,5 +44,21 @@ img:hover {
 
 #welcome-box {
   color: #042940;
-  text-shadow: 5px 5px 5px white;
+  text-shadow: none;
+}
+
+mark {
+  background-color: #D6D58E;
+  color: #005C53;
+}
+img, video {
+  width: 90%;
+  height: auto;
+}
+#resume-box {
+  margin: 20px 0;
+  padding: 15px;
+  background: #9FC131;
+  color: #005C53;
+  font-weight: bold;
 }

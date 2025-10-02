@@ -14,20 +14,22 @@ nav li {
   display: block;
   margin: 20px 0;
 }
-
+nav ul {
+  padding: 10px;
+  margin: 10px 0;
+}
+nav a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
 img, video {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 .project-box {
   float: none;
   width: 100%;
-  margin: 10px 0;
-}
-
-nav ul {
-  padding: 10px;
   margin: 10px 0;
 }
 
