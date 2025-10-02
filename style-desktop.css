@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #002F2F, #046380);
+  color: #EFECCA;
+}
+
+#wrapper {
+  width: 90%;
+  margin: auto;
+  background-color: #046380;
+  padding: 20px;
+}
+
+header {
+  background-color: #002F2F;
+  padding: 15px;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 12px;
+  animation: Rainbow 2s infinite;
+}
+
+#welcome-box {
+  height: 400px;
+  background: url("hero.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #EFECCA;
+  font-size: 24px;
+  text-align: center;
+  /*add shadow to text*/
+  text-shadow: 10px 10px 10px black;
+  padding-top: 150px;
+}
+
+nav {
+  background-color: #046380;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block; /* Discussed in slideshow 4 lecture */
+  margin: 0 10px;
+}
+
+nav a {
+  color: #E6E2AF;
+  background-color: #046380;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  color: #EFECCA;
+  background-color: #002F2F;
+}
+
+article {
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #002F2F;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  transition: transform 0.5s;
+}
+img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+@keyframes Rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+  
+}
+
+button:hover 
+{ 
+    background-color:beige; 
+    color:black; 
+    height:40px; 
+    border:2px #EFECCA solid; 
+    box-shadow: -10px -10px 5px black; 
+    border-radius: 5px; 
+}
+
+button 
+{
+background-color:black;
+margin: 15px; 
+display: block;
+margin-left: auto;
+margin-right: auto;
+color:#EFECCA;
+height:40px;
+border:2px #EFECCA solid;
+box-shadow: 10px 10px 5px black;
+border-radius: 5px;
+}
+
+video
+{ 
+    width: 800px; 
+    padding: 15px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black; 
+    border:2px #EFECCA solid; 
+    box-shadow: 10px 10px 5px black;
+}
+
+form {
+  margin: 40px;
+  max-width: 600px;
+  padding: 24px 28px;
+  background: #002F2F;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #E6E2AF;
+  color: #EFECCA;
+}
+
+/* Project gallery boxes */
+#project-gallery {
+  margin-top: 30px;
+}
+
+.project-box1, .project-box2, .project-box3 {
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  background-color: #002F2F;
+  color: #EFECCA;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+  
+}
+/* Slide in from bottom animation */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-box1 {
+    animation: slideInUp 1s ease forwards;
+}
+
+.project-box2 {
+    animation: slideInUp 2s ease forwards;
+}
+
+.project-box3 {
+    animation: slideInUp 3s ease forwards;
+}
+.project-box4 {
+  float: left;
+  width: 96.5%;
+  margin: 1.5%;
+  background-color: #002F2F;
+  color: #EFECCA;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+  animation: slideInUp 1s ease forwards;
+}
+.project-box4 img:hover {
+  transform: none;
+}
+
+#resume-box {
+  float: left;
+  width: 96.5%;
+  background-color: #002F2F;
+  color: #EFECCA;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#resume-box img:hover {
+  transform: none;
+}

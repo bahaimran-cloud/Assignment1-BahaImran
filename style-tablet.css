@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#wrapper {
+  width: 90%;
+  background: linear-gradient(135deg, #D6D58E, white);
+;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+nav {
+  background-color: #9FC131;
+}
+body {
+  color: black;
+  background: linear-gradient(135deg, #9FC131, white);
+}
+
+header, footer {
+  background: #9FC131;
+}
+
+.project-box {
+  width: 45%;
+  margin: 2.5%;
+}
+img:hover {
+  transform: none;
+}
+
+#welcome-box {
+  color: #042940;
+  text-shadow: 5px 5px 5px white;
+}

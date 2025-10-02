@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style-desktop.css">
+  <link rel="stylesheet" href="style-tablet.css" media="screen and (max-width: 1024px)">
+  <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 600px)">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <h2>Get in Touch</h2>
+      <form action="mailto:baha01ab@gmail.com?subject=Contact from Portfolio"
+      enctype="text/plain" method="post" name="ContactForm">
+        <p><label>First Name: <input type="text" name="name" required></label></p>
+        <p><label>Last Name: <input type="text" name="name" required></label></p>
+        <p><label>Email: <input type="email" name="email" required></label></p>
+        <p><label>Cell No: <input type="tel" name="phone" pattern="[0-9]{10}" required></label></p>
+        <p><label for="where">Where did you discover this portfolio</label>
+        <select name="where">
+            <option value="LinkedIn">LinkedIn Page</option>
+            <option value="Given">From a friend</option>
+            <option value="Resume">Resume</option>
+            <option value="GitHub">GitHub</option>
+            <option value="Other">Other</option>
+        </select></p>
+        <p><label>Comments: <textarea name="comments" cols="60" rows="8"></textarea></label></p>
+        <p><input type="submit" value="Submit"></p>
+        <p><input type="reset" value="Reset"></p>
+      </form>
+    </article>
+
+    <footer>
+      <p>Contact: Baha01ab@gmail.com | © 2025 Student Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>

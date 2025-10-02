@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+  font-size: 14px;
+  background: linear-gradient(135deg, #DBF227, #E6E2AF);
+}
+
+#wrapper {
+  width: 90%;
+  padding: 10px;
+}
+
+nav li {
+  display: block;
+  margin: 20px 0;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+.project-box {
+  float: none;
+  width: 100%;
+  margin: 10px 0;
+}
+
+nav ul {
+  padding: 10px;
+  margin: 10px 0;
+}
+
