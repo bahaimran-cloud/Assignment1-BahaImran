@@ -16,13 +16,15 @@ nav {
 }
 
 nav a {
-  background-color: #D6D58E;
+  background-color: #9FC131;
   color: #046380;
   margin: auto;
   display: block;
   width: 60%;
   font-weight: bold;
+  border:black 2px solid;
 }
+
 body {
   color: #046380;
   font-weight: bold;
@@ -34,10 +36,21 @@ header, footer {
   color: #005C53;
 }
 
-.project-box {
+.project-box1, .project-box2, .project-box3 {
+  float: left;
   width: 45%;
   margin: 2.5%;
+  background-color: #9FC131;
+  color: #002F2F;
 }
+.project-box4 {
+  float: none;
+  width: 90%;
+  margin: 5% auto;
+  background-color: #9FC131;
+  color: #002F2F;
+}
+
 img:hover {
   transform: none;
 }
@@ -61,4 +74,17 @@ img, video {
   background: #9FC131;
   color: #005C53;
   font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  resize: vertical; /* Allows vertical resizing only */
+}
+
+form {
+  background-color: #D6D58E;
+  color: #005C53;
+  box-shadow: #9FC131;
 }

@@ -218,3 +218,9 @@ form {
 #resume-box img:hover {
   transform: none;
 }
+
+textarea {
+  width: 100%;     /* fills container width */
+  max-width: 100%; /* prevents overflow */
+  box-sizing: border-box; /* include padding/border inside width */
+}

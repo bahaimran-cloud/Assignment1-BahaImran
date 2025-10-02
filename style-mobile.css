@@ -19,7 +19,7 @@ nav ul {
   margin: 10px 0;
 }
 nav a {
-  font-size: 1.2em;
+  font-size: 20px;
   font-weight: bold;
 }
 img, video {
@@ -27,9 +27,16 @@ img, video {
   height: auto;
 }
 
-.project-box {
+.project-box1, .project-box2, .project-box3, .project-box4 {
   float: none;
   width: 100%;
   margin: 10px 0;
+  font-size: 20px;
 }
 
+textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  resize: vertical; /* Allows vertical resizing only */
+}
