@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Me</title>
+  <title>Student Portfolio - Contact Me</title>
+  <!-- Link to CSS files -->
   <link rel="stylesheet" href="style-desktop.css">
   <link rel="stylesheet" href="style-tablet.css" media="screen and (max-width: 1024px)">
   <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 600px)">
 </head>
 <body>
-  <div id="wrapper">
+  <div id="wrapper">  <!-- Content visible in the browser's window is inside the wrapper -->
     <header>
       <h1>Contact Me</h1>
-      <nav>
+      <nav> <!-- Navigation bar -->
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -23,12 +24,16 @@
 
     <article>
       <h2>Get in Touch</h2>
+      <!-- Form to collect user input -->
+      <!-- The form uses mailto to send an email to the specified address with the subject Contact from Portfolio -->
       <form action="mailto:baha01ab@gmail.com?subject=Contact from Portfolio"
-      enctype="text/plain" method="post" name="ContactForm">
+      enctype="text/plain" method="post" name="ContactForm"> 
+        <!-- Input fields for user details -->
         <p><label>First Name: <input type="text" name="name" required></label></p>
         <p><label>Last Name: <input type="text" name="name" required></label></p>
         <p><label>Email: <input type="email" name="email" required></label></p>
         <p><label>Cell No: <input type="tel" name="phone" pattern="[0-9]{10}" required></label></p>
+        <!-- Dropdown to select how the user found the portfolio -->
         <p><label for="where">Where did you discover this portfolio</label>
         <select name="where">
             <option value="LinkedIn">LinkedIn Page</option>
@@ -37,7 +42,9 @@
             <option value="GitHub">GitHub</option>
             <option value="Other">Other</option>
         </select></p>
+        <!-- Textarea for additional comments -->
         <p><label>Comments: <textarea name="comments" rows="8"></textarea></label></p>
+        <!-- Submit executes email commands and Reset button clears the form -->
         <p><input type="submit" value="Submit"></p>
         <p><input type="reset" value="Reset"></p>
       </form>

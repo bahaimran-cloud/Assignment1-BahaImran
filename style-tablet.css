@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
-#wrapper {
+#wrapper { 
+  /* Ensures the width is 90% of the viewport and the background is a lighter gradient */
   width: 90%;
   background: linear-gradient(135deg, #D6D58E, white);
-;
 }
 
 nav li {
+  /* Ensures each navigation item stacks vertically for tablet */
   display: block;
   margin: 10px 0;
 }
 
 nav {
+  /* Navigation bar color for tablet */
   background-color: #D6D58E;
 }
 
-nav a {
+nav a { /* Makes the navigation links a lighter color and bolder for tablet */
   background-color: #9FC131;
   color: #046380;
   margin: auto;
@@ -25,18 +27,19 @@ nav a {
   border:black 2px solid;
 }
 
-body {
+body { /* Page content color and font change for tablet (lighter color gradient)*/
   color: #046380;
   font-weight: bold;
   background: linear-gradient(135deg, #9FC131, white);
 }
 
-header, footer {
+header, footer { /* Header and Footer color change for tablet */
   background: #9FC131;
   color: #005C53;
 }
 
-.project-box1, .project-box2, .project-box3 {
+.project-box1, .project-box2, .project-box3 { /* Individual Project Box Styles for boxes 1, 2, and 3 */
+  /* Stacks the project boxes vertically and makes them wider for tablet */
   float: left;
   width: 45%;
   margin: 2.5%;
@@ -44,6 +47,7 @@ header, footer {
   color: #002F2F;
 }
 .project-box4 {
+  /*remove float to stack the big picture box vertically and make it wider for tablet*/
   float: none;
   width: 90%;
   margin: 5% auto;
@@ -51,39 +55,41 @@ header, footer {
   color: #002F2F;
 }
 
-img:hover {
+img:hover { /* Disable hover effect for all images as they dont work on tablet/mobile */
   transform: none;
 }
 
-#welcome-box {
+#welcome-box { /* Change welcome box style for tablet */
   color: #042940;
-  text-shadow: none;
+  text-shadow: none; /* Removes text shadow for better readability on tablet */
 }
 
 mark {
+  /* by removing the shadow and changing the background color, the highlight is more visible on tablet for welcome box */
   background-color: #D6D58E;
   color: #005C53;
 }
-img, video {
+img, video { /* Makes all images and videos responsive for tablet */
   width: 90%;
   height: auto;
 }
-#resume-box {
+#resume-box { /* Resume box styles for tablet */
+  /* Changes the width and margin for better fit on tablet aswell as colors and bold font */
   margin: 20px 0;
   padding: 15px;
   background: #9FC131;
   color: #005C53;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
-textarea {
+textarea { /* Resize Textarea for comments on contact page */
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   resize: vertical; /* Allows vertical resizing only */
 }
 
-form {
+form { /* Change form style for tablet */
   background-color: #D6D58E;
   color: #005C53;
   box-shadow: #9FC131;

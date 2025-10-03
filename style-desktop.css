@@ -1,50 +1,55 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Ensure UTF-8 encoding for special characters */
 
-body {
+body { /* Global styles */
   font-family: Verdana, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  /* Dark background gradient with light text for Desktop/laptop */
   background: linear-gradient(135deg, #002F2F, #046380);
   color: #EFECCA;
 }
 
-#wrapper {
+#wrapper { /* Main container for all page content */
   width: 90%;
   margin: auto;
   background-color: #046380;
   padding: 20px;
 }
 
-header {
+header { /* Header styles for all pages */
   background-color: #002F2F;
   padding: 15px;
 }
 
-header h1 {
+header h1 { /* Very Top Header Styling for all pages (Rainbow Animation) */
   text-align: center;
   margin: 0px;
   padding: 12px;
   animation: Rainbow 2s infinite;
 }
 
-#welcome-box {
+#welcome-box { /* Welcome box with hero image */
   height: 400px;
+  /* Hero image centered and covering the box */
   background: url("hero.png") no-repeat center;
+  /* Ensure the image covers the entire box */
   background-size: cover;
+  /* Ensure the image is fixed in place */
   background-attachment: fixed;
   color: #EFECCA;
   font-size: 24px;
   text-align: center;
   /*add shadow to text*/
+  /*text-shadow: horizontal-offset vertical-offset blur-radius color|none|initial|inherit;*/
   text-shadow: 10px 10px 10px black;
   padding-top: 150px;
 }
-mark {
+mark { /* Hidden highlight for welcome box (To be used for mobile/tablet) */
   color: inherit;
   background-color: inherit;
 }
 
-nav {
+nav { /* Navigation bar styles */
   background-color: #046380;
   text-align: center;
   padding: 10px 0;
@@ -52,46 +57,47 @@ nav {
   width: 100%;
 }
 
-nav ul {
+nav ul { /* Navigation list styles */
   padding: 0;
   margin: 0;
 }
 
-nav li {
+nav li { /* Navigation list item styles */
   display: inline-block; /* Discussed in slideshow 4 lecture */
+  /*Maintains the same list item size inside the nav bar ^^^*/
   margin: 0 10px;
 }
 
-nav a {
+nav a { /* Navigation link styles */
   color: #E6E2AF;
   background-color: #046380;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 8px; /* Rounded corners */
 }
 
-nav a:hover {
+nav a:hover { /* Hover effect for navigation links */
   color: #EFECCA;
   background-color: #002F2F;
 }
 
-article {
+article { /* Article content style for all pages */
   margin: 20px 0;
 }
 
-footer {
+footer { /* Footer styles for all pages */
   background-color: #002F2F;
   padding: 10px;
   text-align: center;
 }
 
-img {
+img { /* Image Transition timer for all images */
   transition: transform 0.5s;
 }
-img:hover {
+img:hover { /* Image hover effect for all images */
   transform: scale(1.1) rotate(2deg);
 }
 
-@keyframes Rainbow {
+@keyframes Rainbow { /* Rainbow Animation for header 1*/
   0% { color: red; }
   14% { color: orange; }
   28% { color: yellow; }
@@ -103,8 +109,7 @@ img:hover {
   
 }
 
-button:hover 
-{ 
+button:hover { /* Button hover effect for video play/pause */
     background-color:beige; 
     color:black; 
     height:40px; 
@@ -113,24 +118,23 @@ button:hover
     border-radius: 5px; 
 }
 
-button 
-{
-background-color:black;
-margin: 15px; 
-display: block;
-margin-left: auto;
-margin-right: auto;
-color:#EFECCA;
-height:40px;
-border:2px #EFECCA solid;
-box-shadow: 10px 10px 5px black;
-border-radius: 5px;
+button { /* Button styles for video play/pause */
+  background-color:black;
+  margin: 15px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#EFECCA;
+  height:40px;
+  border:2px #EFECCA solid;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 5px;
 }
 
-video
-{ 
+video { /* Video styles for all videos (about me video)*/
     width: 800px; 
     padding: 15px; 
+    /*Maintains video in own seperate block*/
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -139,7 +143,7 @@ video
     box-shadow: 10px 10px 5px black;
 }
 
-form {
+form { /* Form styles for contact page */
   margin: 40px;
   max-width: 600px;
   padding: 24px 28px;
@@ -149,24 +153,25 @@ form {
   color: #EFECCA;
 }
 
-/* Project gallery boxes */
+/* Project gallery boxes 1,2,3 */
 #project-gallery {
   margin-top: 30px;
 }
 
-.project-box1, .project-box2, .project-box3 {
-  float: left;
+.project-box1, .project-box2, .project-box3 { /* Individual Project Box Styles for boxes 1,2,3 */
+  float: left; /* Align boxes side by side */
   width: 30%;
   margin: 1.5%;
   background-color: #002F2F;
   color: #EFECCA;
   padding: 10px;
-  box-sizing: border-box;
+  /*Ensures padding and border are included in the width that is set for the box*/
+  box-sizing: border-box; /* Discussed in slideshow 4 lecture */
   text-align: center;
-  opacity: 0;
+  opacity: 0; /* Initially hidden for animation */
   
 }
-/* Slide in from bottom animation */
+/* Slide in from bottom animation for project boxes */
 @keyframes slideInUp {
   from {
     opacity: 0;
@@ -179,7 +184,7 @@ form {
 }
 
 .project-box1 {
-    animation: slideInUp 1s ease forwards;
+    animation: slideInUp 1s ease forwards; /*forwards keeps the final state of the animation*/
 }
 
 .project-box2 {
@@ -189,24 +194,25 @@ form {
 .project-box3 {
     animation: slideInUp 3s ease forwards;
 }
-.project-box4 {
+.project-box4 { /* Individual Project Box Styles for box 4 (Big Picture) */
   float: left;
   width: 96.5%;
   margin: 1.5%;
   background-color: #002F2F;
   color: #EFECCA;
   padding: 10px;
+  /*Ensures padding and border are included in the width that is set for the box*/
   box-sizing: border-box;
   text-align: center;
   opacity: 0;
   animation: slideInUp 1s ease forwards;
 }
-.project-box4 img:hover {
+.project-box4 img:hover { /* Disable hover effect for big picture image */
   transform: none;
 }
 
-#resume-box {
-  float: left;
+#resume-box { /* Resume box styles */
+  float: left; /* position the box on the left side of the page  */
   width: 96.5%;
   background-color: #002F2F;
   color: #EFECCA;
@@ -215,12 +221,12 @@ form {
   text-align: center;
   margin-bottom: 40px;
 }
-#resume-box img:hover {
+#resume-box img:hover { /* Disable hover effect for resume image */
   transform: none;
 }
 
-textarea {
+textarea { /* Textarea for comments on contact page */
   width: 100%;     /* fills container width */
-  max-width: 100%; /* prevents overflow */
-  box-sizing: border-box; /* include padding/border inside width */
+  max-width: 100%;
+  box-sizing: border-box; 
 }

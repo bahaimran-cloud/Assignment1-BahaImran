@@ -1,40 +1,41 @@
 @charset "UTF-8";
 
-body {
+body { /* Page content color and font change for mobile (lighter color gradient)*/
   font-size: 14px;
   background: linear-gradient(135deg, #DBF227, #E6E2AF);
 }
 
-#wrapper {
+#wrapper { /* Ensures the wrapper is properly aligned and is 90% of the viewport for mobile */
   width: 90%;
   padding: 10px;
 }
 
-nav li {
+nav li { /* Ensures each navigation item stacks vertically for mobile */
   display: block;
   margin: 20px 0;
 }
-nav ul {
+nav ul { /* Adds padding and margin to the navigation list for mobile */
   padding: 10px;
   margin: 10px 0;
 }
-nav a {
+nav a { /* Makes the navigation links bigger size and bolder for mobile */
   font-size: 20px;
   font-weight: bold;
 }
-img, video {
+img, video { /* Makes all images and videos responsive for mobile */
   width: 90%;
   height: auto;
 }
 
-.project-box1, .project-box2, .project-box3, .project-box4 {
+.project-box1, .project-box2, .project-box3, .project-box4 { /* Individual Project Box Styles for boxes 1, 2, 3, and 4 */
+  /* Stacks the project boxes vertically and makes them wider for mobile */
   float: none;
   width: 100%;
   margin: 10px 0;
   font-size: 20px;
 }
 
-textarea {
+textarea { /* Resize Textarea for comments on contact page */
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;

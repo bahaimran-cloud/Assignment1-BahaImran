@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me</title>
+  <title>Student Portfolio - About Me</title>
+  <!-- Link to CSS files -->
   <link rel="stylesheet" href="style-desktop.css">
   <link rel="stylesheet" href="style-tablet.css" media="screen and (max-width: 1024px)">
   <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 600px)">
@@ -10,8 +11,8 @@
 <body>
   <div id="wrapper">
     <header>
-      <h1>About Me</h1>
-      <nav>
+      <h1>Student Portfolio - About Me</h1>
+      <nav> <!-- Navigation Menu -->
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -21,18 +22,20 @@
       </nav>
     </header>
 
-    <article>
+    <article> <!-- Main Content -->
       <h2>Introduction</h2>
       <img src="Intro.jpg" alt="My Photo" width="250">
       <p>Hello, my name is Baha Imran. I am a student currently studying at Ontario Tech University for the Networking and IT Security program. I am passionate about technology, coding, and learning new skills. Below is a video where you will find more information about me and my interests.</p>
       
-      <h2>My Video</h2>
-      <video width="700" height="400" controls poster="Intro.jpg" preload="auto" autoplay muted loop>
+      <h2>My Video</h2> <!-- Embedded Video -->
+      <video width="700" height="400" controls poster="Intro.jpg" preload="auto" autoplay muted loop> <!-- Video with controls, autoplay and muted when website loads -->
+        <!-- Both MP4 and OGG formats and error handling -->
         <source src="Video.mp4" type="video/mp4">
         <source src="Video.ogv" type="video/ogg">
         Your browser does not support the video tag.
       </video>
       <br>
+      <!-- Button to play/pause the video with JavaScript -->
       <button onclick="playPause()">Play or Pause the Video</button>
       <script>
         const video = document.querySelector('video');
