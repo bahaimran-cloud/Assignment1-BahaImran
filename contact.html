@@ -26,15 +26,15 @@
       <h2>Get in Touch</h2>
       <!-- Form to collect user input -->
       <!-- The form uses mailto to send an email to the specified address with the subject Contact from Portfolio -->
-      <form action="mailto:baha01ab@gmail.com?subject=Contact from Portfolio"
+      <form action="mailto:baha01ab@gmail.com?subject=Contact_from_Portfolio"
       enctype="text/plain" method="post" name="ContactForm"> 
         <!-- Input fields for user details -->
-        <p><label>First Name: <input type="text" name="name" required></label></p>
-        <p><label>Last Name: <input type="text" name="name" required></label></p>
+        <p><label>First Name: <input type="text" name="Firstname" required></label></p>
+        <p><label>Last Name: <input type="text" name="Lastname" required></label></p>
         <p><label>Email: <input type="email" name="email" required></label></p>
         <p><label>Cell No: <input type="tel" name="phone" pattern="[0-9]{10}" required></label></p>
         <!-- Dropdown to select how the user found the portfolio -->
-        <p><label for="where">Where did you discover this portfolio</label>
+        <p><label id="where">Where did you discover this portfolio</label>
         <select name="where">
             <option value="LinkedIn">LinkedIn Page</option>
             <option value="Given">From a friend</option>

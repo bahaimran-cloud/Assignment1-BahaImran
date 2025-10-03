@@ -154,7 +154,7 @@ form { /* Form styles for contact page */
 }
 
 /* Project gallery boxes 1,2,3 */
-#project-gallery {
+#project-gallery { /* Project Gallery Section */
   margin-top: 30px;
 }
 
@@ -210,16 +210,27 @@ form { /* Form styles for contact page */
 .project-box4 img:hover { /* Disable hover effect for big picture image */
   transform: none;
 }
+.project-box1 img, .project-box2 img, .project-box3 img, .project-box4 img {
+  max-width: 100%;     /* make project images responsive */
+  height: auto;
+  margin-bottom: 10px;
+}
 
 #resume-box { /* Resume box styles */
-  float: left; /* position the box on the left side of the page  */
-  width: 96.5%;
+  width: 100%;
   background-color: #002F2F;
   color: #EFECCA;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#resume-box img {
+  max-width: 60%;     /* make resume image responsive */
+  height: auto;
+  margin-bottom: 10px;
 }
 #resume-box img:hover { /* Disable hover effect for resume image */
   transform: none;

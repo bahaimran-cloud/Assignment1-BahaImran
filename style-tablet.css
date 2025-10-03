@@ -92,5 +92,6 @@ textarea { /* Resize Textarea for comments on contact page */
 form { /* Change form style for tablet */
   background-color: #D6D58E;
   color: #005C53;
-  box-shadow: #9FC131;
+  box-shadow: 0 4px 16px #005C53;
+  border-radius: 5px;
 }
