@@ -3,7 +3,7 @@
 #wrapper { 
   /* Ensures the width is 90% of the viewport and the background is a lighter gradient */
   width: 90%;
-  background: linear-gradient(135deg, #D6D58E, white);
+  background: linear-gradient(#D6D58E, white);
 }
 
 nav li {
@@ -30,7 +30,7 @@ nav a { /* Makes the navigation links a lighter color and bolder for tablet */
 body { /* Page content color and font change for tablet (lighter color gradient)*/
   color: #046380;
   font-weight: bold;
-  background: linear-gradient(135deg, #9FC131, white);
+  background: linear-gradient(#9FC131, white);
 }
 
 header, footer { /* Header and Footer color change for tablet */
